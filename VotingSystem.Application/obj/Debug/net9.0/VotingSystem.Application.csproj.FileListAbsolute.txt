@@ -1,0 +1,15 @@
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\VotingSystem.Application\bin\Debug\net9.0\VotingSystem.Application.deps.json
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\VotingSystem.Application\bin\Debug\net9.0\VotingSystem.Application.dll
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\VotingSystem.Application\bin\Debug\net9.0\VotingSystem.Application.pdb
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\VotingSystem.Application\obj\Debug\net9.0\VotingSystem.Application.csproj.AssemblyReference.cache
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\VotingSystem.Application\obj\Debug\net9.0\VotingSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\VotingSystem.Application\obj\Debug\net9.0\VotingSystem.Application.AssemblyInfoInputs.cache
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\VotingSystem.Application\obj\Debug\net9.0\VotingSystem.Application.AssemblyInfo.cs
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\VotingSystem.Application\obj\Debug\net9.0\VotingSystem.Application.csproj.CoreCompileInputs.cache
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\VotingSystem.Application\obj\Debug\net9.0\VotingSystem.Application.dll
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\VotingSystem.Application\obj\Debug\net9.0\refint\VotingSystem.Application.dll
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\VotingSystem.Application\obj\Debug\net9.0\VotingSystem.Application.pdb
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\VotingSystem.Application\obj\Debug\net9.0\ref\VotingSystem.Application.dll
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\VotingSystem.Application\bin\Debug\net9.0\VotingSystem.Domain.dll
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\VotingSystem.Application\bin\Debug\net9.0\VotingSystem.Domain.pdb
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\VotingSystem.Application\obj\Debug\net9.0\VotingSy.FF10A40B.Up2Date

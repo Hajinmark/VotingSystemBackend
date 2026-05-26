@@ -1,0 +1,175 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\VotingSystem.Domain\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{74CA32DD-6CE6-4356-8330-E2B73A2BB3A6}|..\\VotingSystem.Application\\VotingSystem.Application.csproj|c:\\users\\markg\\desktop\\personalproject\\votingsystem\\votingsystem.application\\features\\users\\command\\createuser\\createusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C47A96DC-0836-4A71-B2BE-AEA954E2C6CA}|..\\VotingSystem.Persistence\\VotingSystem.Persistence.csproj|c:\\users\\markg\\desktop\\personalproject\\votingsystem\\votingsystem.persistence\\dbcontext\\votingsystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C47A96DC-0836-4A71-B2BE-AEA954E2C6CA}|..\\VotingSystem.Persistence\\VotingSystem.Persistence.csproj|c:\\users\\markg\\desktop\\personalproject\\votingsystem\\votingsystem.persistence\\registerpersistenceservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74CA32DD-6CE6-4356-8330-E2B73A2BB3A6}|..\\VotingSystem.Application\\VotingSystem.Application.csproj|c:\\users\\markg\\desktop\\personalproject\\votingsystem\\votingsystem.application\\registerapplicationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54ED14A-946C-42E3-B917-7AFD2A7EFCA3}|..\\VotingSystem.API\\VotingSystem.API.csproj|c:\\users\\markg\\desktop\\personalproject\\votingsystem\\votingsystem.api\\middlewares\\errorhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54ED14A-946C-42E3-B917-7AFD2A7EFCA3}|..\\VotingSystem.API\\VotingSystem.API.csproj|c:\\users\\markg\\desktop\\personalproject\\votingsystem\\votingsystem.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54ED14A-946C-42E3-B917-7AFD2A7EFCA3}|..\\VotingSystem.API\\VotingSystem.API.csproj|c:\\users\\markg\\desktop\\personalproject\\votingsystem\\votingsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74CA32DD-6CE6-4356-8330-E2B73A2BB3A6}|..\\VotingSystem.Application\\VotingSystem.Application.csproj|c:\\users\\markg\\desktop\\personalproject\\votingsystem\\votingsystem.application\\exceptions\\alreadyexistsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54ED14A-946C-42E3-B917-7AFD2A7EFCA3}|..\\VotingSystem.API\\VotingSystem.API.csproj|c:\\users\\markg\\desktop\\personalproject\\votingsystem\\votingsystem.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C47A96DC-0836-4A71-B2BE-AEA954E2C6CA}|..\\VotingSystem.Persistence\\VotingSystem.Persistence.csproj|c:\\users\\markg\\desktop\\personalproject\\votingsystem\\votingsystem.persistence\\migrations\\20260522032647_adduserdetailscascadedelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20260522032647_AddUserDetailsCascadeDelete.cs",
+              "DocumentMoniker": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\VotingSystem.Persistence\\Migrations\\20260522032647_AddUserDetailsCascadeDelete.cs",
+              "RelativeDocumentMoniker": "..\\VotingSystem.Persistence\\Migrations\\20260522032647_AddUserDetailsCascadeDelete.cs",
+              "ToolTip": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\VotingSystem.Persistence\\Migrations\\20260522032647_AddUserDetailsCascadeDelete.cs",
+              "RelativeToolTip": "..\\VotingSystem.Persistence\\Migrations\\20260522032647_AddUserDetailsCascadeDelete.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T03:26:47.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VotingSystemDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\VotingSystem.Persistence\\DbContext\\VotingSystemDbContext.cs",
+              "RelativeDocumentMoniker": "..\\VotingSystem.Persistence\\DbContext\\VotingSystemDbContext.cs",
+              "ToolTip": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\VotingSystem.Persistence\\DbContext\\VotingSystemDbContext.cs",
+              "RelativeToolTip": "..\\VotingSystem.Persistence\\DbContext\\VotingSystemDbContext.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T03:21:09.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegisterPersistenceServices.cs",
+              "DocumentMoniker": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\VotingSystem.Persistence\\RegisterPersistenceServices.cs",
+              "RelativeDocumentMoniker": "..\\VotingSystem.Persistence\\RegisterPersistenceServices.cs",
+              "ToolTip": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\VotingSystem.Persistence\\RegisterPersistenceServices.cs",
+              "RelativeToolTip": "..\\VotingSystem.Persistence\\RegisterPersistenceServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T03:20:59.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterApplicationServices.cs",
+              "DocumentMoniker": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\VotingSystem.Application\\RegisterApplicationServices.cs",
+              "RelativeDocumentMoniker": "..\\VotingSystem.Application\\RegisterApplicationServices.cs",
+              "ToolTip": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\VotingSystem.Application\\RegisterApplicationServices.cs",
+              "RelativeToolTip": "..\\VotingSystem.Application\\RegisterApplicationServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T03:20:51.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\VotingSystem.API\\Program.cs",
+              "RelativeDocumentMoniker": "..\\VotingSystem.API\\Program.cs",
+              "ToolTip": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\VotingSystem.API\\Program.cs",
+              "RelativeToolTip": "..\\VotingSystem.API\\Program.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAArwEIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T01:52:31.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\VotingSystem.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "..\\VotingSystem.API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\VotingSystem.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "..\\VotingSystem.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-22T01:49:43.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ErrorHandlingMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\VotingSystem.API\\Middlewares\\ErrorHandlingMiddleware.cs",
+              "RelativeDocumentMoniker": "..\\VotingSystem.API\\Middlewares\\ErrorHandlingMiddleware.cs",
+              "ToolTip": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\VotingSystem.API\\Middlewares\\ErrorHandlingMiddleware.cs",
+              "RelativeToolTip": "..\\VotingSystem.API\\Middlewares\\ErrorHandlingMiddleware.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAArwBsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T01:30:57.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AlreadyExistsException.cs",
+              "DocumentMoniker": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\VotingSystem.Application\\Exceptions\\AlreadyExistsException.cs",
+              "RelativeDocumentMoniker": "..\\VotingSystem.Application\\Exceptions\\AlreadyExistsException.cs",
+              "ToolTip": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\VotingSystem.Application\\Exceptions\\AlreadyExistsException.cs",
+              "RelativeToolTip": "..\\VotingSystem.Application\\Exceptions\\AlreadyExistsException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T01:40:19.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\VotingSystem.API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "..\\VotingSystem.API\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\VotingSystem.API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "..\\VotingSystem.API\\Controllers\\UserController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAASwCEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T01:18:55.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateUserCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\VotingSystem.Application\\Features\\Users\\Command\\CreateUser\\CreateUserCommandHandler.cs",
+              "RelativeDocumentMoniker": "..\\VotingSystem.Application\\Features\\Users\\Command\\CreateUser\\CreateUserCommandHandler.cs",
+              "ToolTip": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\VotingSystem.Application\\Features\\Users\\Command\\CreateUser\\CreateUserCommandHandler.cs",
+              "RelativeToolTip": "..\\VotingSystem.Application\\Features\\Users\\Command\\CreateUser\\CreateUserCommandHandler.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAASwEIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T01:55:16.858Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
