@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\hangfire-practice\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6A1CAEE2-1291-48B6-B45A-214EC4EFA5FF}|hangfire-practice.csproj|c:\\users\\markg\\desktop\\personalproject\\votingsystem\\hangfire-practice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A1CAEE2-1291-48B6-B45A-214EC4EFA5FF}|hangfire-practice.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A1CAEE2-1291-48B6-B45A-214EC4EFA5FF}|hangfire-practice.csproj|c:\\users\\markg\\desktop\\personalproject\\votingsystem\\hangfire-practice\\job\\databasebackupjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A1CAEE2-1291-48B6-B45A-214EC4EFA5FF}|hangfire-practice.csproj|solutionrelative:job\\databasebackupjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A1CAEE2-1291-48B6-B45A-214EC4EFA5FF}|hangfire-practice.csproj|c:\\users\\markg\\desktop\\personalproject\\votingsystem\\hangfire-practice\\service\\databasebackupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A1CAEE2-1291-48B6-B45A-214EC4EFA5FF}|hangfire-practice.csproj|solutionrelative:service\\databasebackupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A1CAEE2-1291-48B6-B45A-214EC4EFA5FF}|hangfire-practice.csproj|c:\\users\\markg\\desktop\\personalproject\\votingsystem\\hangfire-practice\\controllers\\hangfirecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A1CAEE2-1291-48B6-B45A-214EC4EFA5FF}|hangfire-practice.csproj|solutionrelative:controllers\\hangfirecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HangfireController.cs",
+              "DocumentMoniker": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\hangfire-practice\\Controllers\\HangfireController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HangfireController.cs",
+              "ToolTip": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\hangfire-practice\\Controllers\\HangfireController.cs",
+              "RelativeToolTip": "Controllers\\HangfireController.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T16:13:25.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DatabaseBackupJob.cs",
+              "DocumentMoniker": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\hangfire-practice\\Job\\DatabaseBackupJob.cs",
+              "RelativeDocumentMoniker": "Job\\DatabaseBackupJob.cs",
+              "ToolTip": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\hangfire-practice\\Job\\DatabaseBackupJob.cs",
+              "RelativeToolTip": "Job\\DatabaseBackupJob.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T16:00:07.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DatabaseBackupService.cs",
+              "DocumentMoniker": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\hangfire-practice\\Service\\DatabaseBackupService.cs",
+              "RelativeDocumentMoniker": "Service\\DatabaseBackupService.cs",
+              "ToolTip": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\hangfire-practice\\Service\\DatabaseBackupService.cs",
+              "RelativeToolTip": "Service\\DatabaseBackupService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T15:34:33.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\hangfire-practice\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\hangfire-practice\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAswDYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-11T15:12:43.6Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

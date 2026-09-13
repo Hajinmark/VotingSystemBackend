@@ -9,3 +9,16 @@ C:\Users\markg\Desktop\PersonalProject\VotingSystem\VotingSystem.Domain\obj\Debu
 C:\Users\markg\Desktop\PersonalProject\VotingSystem\VotingSystem.Domain\obj\Debug\net9.0\refint\VotingSystem.Domain.dll
 C:\Users\markg\Desktop\PersonalProject\VotingSystem\VotingSystem.Domain\obj\Debug\net9.0\VotingSystem.Domain.pdb
 C:\Users\markg\Desktop\PersonalProject\VotingSystem\VotingSystem.Domain\obj\Debug\net9.0\ref\VotingSystem.Domain.dll
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\VotingSystem.Domain\obj\Debug\net9.0\VotingSystem.Domain.sourcelink.json
+C:\Users\markg\Documents\Programming\PersonalProject\VotingSystem\VotingSystem.Domain\bin\Debug\net9.0\VotingSystem.Domain.deps.json
+C:\Users\markg\Documents\Programming\PersonalProject\VotingSystem\VotingSystem.Domain\bin\Debug\net9.0\VotingSystem.Domain.dll
+C:\Users\markg\Documents\Programming\PersonalProject\VotingSystem\VotingSystem.Domain\bin\Debug\net9.0\VotingSystem.Domain.pdb
+C:\Users\markg\Documents\Programming\PersonalProject\VotingSystem\VotingSystem.Domain\obj\Debug\net9.0\VotingSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\markg\Documents\Programming\PersonalProject\VotingSystem\VotingSystem.Domain\obj\Debug\net9.0\VotingSystem.Domain.AssemblyInfoInputs.cache
+C:\Users\markg\Documents\Programming\PersonalProject\VotingSystem\VotingSystem.Domain\obj\Debug\net9.0\VotingSystem.Domain.AssemblyInfo.cs
+C:\Users\markg\Documents\Programming\PersonalProject\VotingSystem\VotingSystem.Domain\obj\Debug\net9.0\VotingSystem.Domain.csproj.CoreCompileInputs.cache
+C:\Users\markg\Documents\Programming\PersonalProject\VotingSystem\VotingSystem.Domain\obj\Debug\net9.0\VotingSystem.Domain.sourcelink.json
+C:\Users\markg\Documents\Programming\PersonalProject\VotingSystem\VotingSystem.Domain\obj\Debug\net9.0\VotingSystem.Domain.dll
+C:\Users\markg\Documents\Programming\PersonalProject\VotingSystem\VotingSystem.Domain\obj\Debug\net9.0\refint\VotingSystem.Domain.dll
+C:\Users\markg\Documents\Programming\PersonalProject\VotingSystem\VotingSystem.Domain\obj\Debug\net9.0\VotingSystem.Domain.pdb
+C:\Users\markg\Documents\Programming\PersonalProject\VotingSystem\VotingSystem.Domain\obj\Debug\net9.0\ref\VotingSystem.Domain.dll

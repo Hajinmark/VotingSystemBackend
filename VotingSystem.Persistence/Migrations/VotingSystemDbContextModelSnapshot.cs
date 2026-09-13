@@ -22,6 +22,99 @@ namespace VotingSystem.Persistence.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("VotingSystem.Domain.Entities.Election", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("CreatedBy")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Status")
+                        .HasMaxLength(20)
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Elections");
+                });
+
+            modelBuilder.Entity("VotingSystem.Domain.Entities.Position", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("DisplayOrder")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ElectionId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ElectionId");
+
+                    b.ToTable("Positions");
+                });
+
+            modelBuilder.Entity("VotingSystem.Domain.Entities.Roles", b =>
+                {
+                    b.Property<int>("RoleId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RoleId"));
+
+                    b.Property<string>("RoleName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("RoleId");
+
+                    b.ToTable("Roles");
+                });
+
             modelBuilder.Entity("VotingSystem.Domain.Entities.UserDetails", b =>
                 {
                     b.Property<int>("Id")
@@ -56,6 +149,29 @@ namespace VotingSystem.Persistence.Migrations
                     b.ToTable("UserDetails");
                 });
 
+            modelBuilder.Entity("VotingSystem.Domain.Entities.UserElection", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ElectionId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ElectionId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserElections");
+                });
+
             modelBuilder.Entity("VotingSystem.Domain.Entities.Users", b =>
                 {
                     b.Property<int>("Id")
@@ -71,10 +187,8 @@ namespace VotingSystem.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Role")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Username")
                         .IsRequired()
@@ -83,7 +197,20 @@ namespace VotingSystem.Persistence.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("RoleId");
+
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("VotingSystem.Domain.Entities.Position", b =>
+                {
+                    b.HasOne("VotingSystem.Domain.Entities.Election", "Election")
+                        .WithMany("Positions")
+                        .HasForeignKey("ElectionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Election");
                 });
 
             modelBuilder.Entity("VotingSystem.Domain.Entities.UserDetails", b =>
@@ -97,9 +224,53 @@ namespace VotingSystem.Persistence.Migrations
                     b.Navigation("Users");
                 });
 
+            modelBuilder.Entity("VotingSystem.Domain.Entities.UserElection", b =>
+                {
+                    b.HasOne("VotingSystem.Domain.Entities.Election", "Election")
+                        .WithMany("UserElections")
+                        .HasForeignKey("ElectionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("VotingSystem.Domain.Entities.Users", "User")
+                        .WithMany("UserElections")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Election");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("VotingSystem.Domain.Entities.Users", b =>
+                {
+                    b.HasOne("VotingSystem.Domain.Entities.Roles", "Roles")
+                        .WithMany("Users")
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Roles");
+                });
+
+            modelBuilder.Entity("VotingSystem.Domain.Entities.Election", b =>
+                {
+                    b.Navigation("Positions");
+
+                    b.Navigation("UserElections");
+                });
+
+            modelBuilder.Entity("VotingSystem.Domain.Entities.Roles", b =>
+                {
+                    b.Navigation("Users");
+                });
+
             modelBuilder.Entity("VotingSystem.Domain.Entities.Users", b =>
                 {
                     b.Navigation("UserDetails");
+
+                    b.Navigation("UserElections");
                 });
 #pragma warning restore 612, 618
         }

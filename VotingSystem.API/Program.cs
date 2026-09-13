@@ -3,6 +3,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using VotingSystem.API.Middlewares;
 using VotingSystem.Application;
+using VotingSystem.Application.Profiles;
 using VotingSystem.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -51,6 +52,8 @@ builder.Services.AddAuthentication(options =>
 });
 
 builder.Services.AddAuthorization();
+builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -25,7 +25,7 @@ namespace VotingSystem.API.Controllers
             {
                 Username = request.Username,
                 PasswordHash = request.PasswordHash,
-                Role = request.Role,
+                RoleId = request.RoleId,
                 FirstName = request.UserDetails.FirstName,
                 LastName = request.UserDetails.LastName,
                 Email = request.UserDetails.Email,
@@ -42,7 +42,7 @@ namespace VotingSystem.API.Controllers
             var command = new LoginUserCommand() 
             {
                Username = request.Username,
-               Email = request.Email,
+               //Email = request.Email,
                PasswordHash = request.Password
             };
 

@@ -10,7 +10,7 @@ namespace VotingSystem.Application.Contracts.Repositories
 {
     public interface IUserRepository : IRepository<Users>
     {
-        Task<string> IsEmailOrUsernameExist(string ?email, string ?username);
-        Task<UsersDTO> GetByUsername(string username, string email);
+        Task<string> IsEmailOrUsernameExist(string ?username, string ? email);
+        Task<UsersDTO> GetByUsername(string username);
     }
 }

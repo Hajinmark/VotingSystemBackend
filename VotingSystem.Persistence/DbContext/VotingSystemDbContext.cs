@@ -13,9 +13,7 @@ namespace VotingSystem.Persistence
         public VotingSystemDbContext(DbContextOptions<VotingSystemDbContext> options) : base(options)
         {
         }
-        //protected VotingSystemDbContext()
-        //{
-        //}
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -25,6 +23,10 @@ namespace VotingSystem.Persistence
 
         public DbSet<Users> Users { get; set; }
         public DbSet<UserDetails> UserDetails { get; set; }
+        public DbSet<Roles> Roles { get; set; }
+        public DbSet<Election> Elections { get; set; }  
+        public DbSet<Position> Positions { get; set; }  
+        public DbSet<UserElection> UserElections { get; set; }
 
     }
 }

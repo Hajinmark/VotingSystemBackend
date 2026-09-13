@@ -23,6 +23,9 @@ namespace VotingSystem.Persistence
             services.AddScoped<IUnitOfWork, UnitOfWorkEFCore>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IEmailService, EmailRepository>();
+            services.AddScoped<IRoleRepository, RoleRepository>();
+            services.AddScoped<IElectionRepository, ElectionRepository>();
+            services.AddScoped<IPositionRepository, PositionRepository>();
 
             return services;
         }

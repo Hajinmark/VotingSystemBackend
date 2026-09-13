@@ -1,0 +1,68 @@
+[
+  {
+    "ContainingType": "hangfire_practice.Controllers.HangfireController",
+    "Method": "DoTheJob",
+    "RelativePath": "api/Hangfire",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "hangfire_practice.Entities.JobTask",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "hangfire_practice.Controllers.HangfireController",
+    "Method": "DelayJob",
+    "RelativePath": "api/Hangfire/DelayJob",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hangfire_practice.Controllers.HangfireController",
+    "Method": "FireAndForget",
+    "RelativePath": "api/Hangfire/FireAndForget",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "hangfire_practice.Controllers.HangfireController",
+    "Method": "GetJob",
+    "RelativePath": "api/Hangfire/GetJob",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "hangfire_practice.Entities.JobTask",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

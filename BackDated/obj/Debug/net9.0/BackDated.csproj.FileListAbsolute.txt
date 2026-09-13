@@ -1,0 +1,15 @@
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\BackDated\bin\Debug\net9.0\BackDated.exe
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\BackDated\bin\Debug\net9.0\BackDated.deps.json
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\BackDated\bin\Debug\net9.0\BackDated.runtimeconfig.json
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\BackDated\bin\Debug\net9.0\BackDated.dll
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\BackDated\bin\Debug\net9.0\BackDated.pdb
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\BackDated\obj\Debug\net9.0\BackDated.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\BackDated\obj\Debug\net9.0\BackDated.AssemblyInfoInputs.cache
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\BackDated\obj\Debug\net9.0\BackDated.AssemblyInfo.cs
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\BackDated\obj\Debug\net9.0\BackDated.csproj.CoreCompileInputs.cache
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\BackDated\obj\Debug\net9.0\BackDated.sourcelink.json
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\BackDated\obj\Debug\net9.0\BackDated.dll
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\BackDated\obj\Debug\net9.0\refint\BackDated.dll
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\BackDated\obj\Debug\net9.0\BackDated.pdb
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\BackDated\obj\Debug\net9.0\BackDated.genruntimeconfig.cache
+C:\Users\markg\Desktop\PersonalProject\VotingSystem\BackDated\obj\Debug\net9.0\ref\BackDated.dll

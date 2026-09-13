@@ -31,13 +31,13 @@ namespace VotingSystem.Application.Features.Users.Command.LoginUser
         public async Task<LoginResponseDTO> Handle(LoginUserCommand request)
         {
             var isUserOrEmailExist = await userRepository
-                .IsEmailOrUsernameExist(request.Username, request.Email);
+                .IsEmailOrUsernameExist(request.Username, null);
 
-            var user = await userRepository.GetByUsername(request.Username, request.Email);
+            var user = await userRepository.GetByUsername(request.Username ?? "");
             
             try
             {
-                if (isUserOrEmailExist.Contains("Both"))
+                if (isUserOrEmailExist.Contains("Not"))
                     throw new NotFoundException();
 
                 var verified = VerifyPassword(user.PasswordHash, request.PasswordHash);
@@ -84,6 +84,8 @@ namespace VotingSystem.Application.Features.Users.Command.LoginUser
 
         public string GenerateToken(UsersDTO user)
         {
+            var role = userRepository.GetByUsername(user.Username);
+
             var key = new SymmetricSecurityKey(
                 Encoding.UTF8.GetBytes(config["Jwt:Key"] ?? "")
             );
@@ -92,9 +94,11 @@ namespace VotingSystem.Application.Features.Users.Command.LoginUser
 
             var claims = new[]
             {
-            new Claim(ClaimTypes.Name, user.Username),
-            new Claim(ClaimTypes.NameIdentifier, user.Id.ToString())
-        };
+                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                new Claim(ClaimTypes.Name, user.Username),
+                new Claim(ClaimTypes.Role, user.Roles?.RoleName ?? "")
+                
+            };
 
             var token = new JwtSecurityToken(
                 issuer: config["Jwt:Issuer"],

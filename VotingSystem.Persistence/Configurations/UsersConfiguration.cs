@@ -26,9 +26,14 @@ namespace VotingSystem.Persistence.Configurations
                .IsRequired()
                .HasMaxLength(50);
 
-            builder.Property(p => p.Role)
-                .IsRequired()
-                .HasMaxLength(20);
+            builder.Property(p => p.RoleId)
+                .HasColumnType("int");
+
+            builder
+                .HasOne(x => x.Roles)
+                .WithMany(x => x.Users)
+                .HasForeignKey(x => x.RoleId)
+                .OnDelete(DeleteBehavior.Cascade);
 
         }
     }

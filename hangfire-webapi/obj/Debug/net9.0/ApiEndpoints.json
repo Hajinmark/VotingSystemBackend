@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "hangfire_webapi.Controllers.HangfireController",
+    "Method": "InsertJob",
+    "RelativePath": "api/Hangfire/InsertJob",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "hangfire_webapi.Entities.JobTask",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "hangfire_webapi.Entities.JobTask",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

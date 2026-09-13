@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "flkjx9U8CXw=",
+  "dgSpecHash": "OvCfmyfRiDA=",
   "success": true,
   "projectFilePath": "C:\\Users\\markg\\Desktop\\PersonalProject\\VotingSystem\\VotingSystem.Application\\VotingSystem.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\markg\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\markg\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\markg\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
     "C:\\Users\\markg\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.1.1\\fluentvalidation.dependencyinjectionextensions.12.1.1.nupkg.sha512",
     "C:\\Users\\markg\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.3.0\\microsoft.aspnetcore.authentication.2.3.0.nupkg.sha512",

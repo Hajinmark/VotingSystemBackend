@@ -13,15 +13,20 @@ namespace VotingSystem.Domain.Entities
         public int Id { get; set; }
         public string Username { get; set; } = null!;
         public string PasswordHash { get; set; } = null!;
-        public string Role { get; set; } = null!;
+        public int RoleId { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public Users() { }
+
+        // Navigation Property
         public UserDetails ? UserDetails { get; set; }
-        public Users(string username, string passwordHash, string role)
+        public Roles? Roles { get; set; }
+        //public ICollection<Election> Elections { get; set; }  = new List<Election>();
+        public ICollection<UserElection> UserElections { get; set; } = new List<UserElection>();
+        public Users(string username, string passwordHash, int roleid)
         {
             Username = username;
             PasswordHash = passwordHash;
-            Role = role;    
+            RoleId = roleid;    
         }
     }
 }

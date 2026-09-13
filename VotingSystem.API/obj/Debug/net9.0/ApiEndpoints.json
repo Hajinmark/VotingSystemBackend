@@ -1,5 +1,123 @@
 [
   {
+    "ContainingType": "VotingSystem.API.Controllers.ElectionController",
+    "Method": "CreateElection",
+    "RelativePath": "api/Election/CreateElection",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "VotingSystem.API.DTO.Elections.CreateElectionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "VotingSystem.API.DTO.Elections.CreateElectionDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VotingSystem.API.Controllers.ElectionController",
+    "Method": "GetElections",
+    "RelativePath": "api/Election/GetElections",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[VotingSystem.API.DTO.Elections.GetElectionsDTO, VotingSystem.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VotingSystem.API.Controllers.ElectionController",
+    "Method": "GetElectionStatus",
+    "RelativePath": "api/Election/GetElectionStatus",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "VotingSystem.API.DTO.Elections.ElectionsStatusDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VotingSystem.API.Controllers.PositionController",
+    "Method": "CreatePosition",
+    "RelativePath": "api/Position/CreatePosition",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "VotingSystem.API.DTO.Positions.CreatePositionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "VotingSystem.API.DTO.Positions.CreatePositionDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VotingSystem.API.Controllers.RoleController",
+    "Method": "CreateRoles",
+    "RelativePath": "api/Role/CreateRoles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "VotingSystem.API.DTO.Roles.RolesDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "VotingSystem.API.Controllers.UserController",
     "Method": "CreateNewUser",
     "RelativePath": "api/User/CreateNewUser",

@@ -10,7 +10,7 @@ namespace VotingSystem.Application.Features.Users.Command.LoginUser
     public class LoginUserCommand : IRequest<LoginResponseDTO>
     {
         public string ? Username { get; set; }
-        public string ? Email { get; set; }
+        //public string ? Email { get; set; }
         public string PasswordHash { get; set; } = null!;
     }
 }

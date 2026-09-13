@@ -32,7 +32,7 @@ namespace VotingSystem.Application.Features.Users.Command.CreateUser
 
             try
             {
-                if (isExist.Contains("Both"))
+                if (isExist.Contains("Not"))
                 {
                     var password = HashedPassword(request.PasswordHash);
 
@@ -41,7 +41,7 @@ namespace VotingSystem.Application.Features.Users.Command.CreateUser
                     (
                         request.Username,
                         password,
-                        request.Role
+                        request.RoleId == 0 ? 1 : request.RoleId
                     );
 
                     // UserDetails
@@ -59,7 +59,7 @@ namespace VotingSystem.Application.Features.Users.Command.CreateUser
                     {
                         Username = request.Username ?? "",
                         Email = request.Email ?? "",
-                        Role = request.Role ?? "",
+                        RoleId = request.RoleId,
                         FirstName = request.FirstName ?? "",
                         LastName = request.LastName ?? ""
                     };

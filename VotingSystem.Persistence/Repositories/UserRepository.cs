@@ -20,13 +20,13 @@ namespace VotingSystem.Persistence.Repositories
             this.context = context;
         }
 
-        public async Task<UsersDTO> GetByUsername(string username, string email)
+        public async Task<UsersDTO> GetByUsername(string username)
         {
             
             var user = await context.Users
+                .Include(x => x.Roles)
                 .Include(x => x.UserDetails)
-                .FirstOrDefaultAsync(x => x.Username == username || 
-                (x.UserDetails != null && x.UserDetails.Email == email));
+                .FirstOrDefaultAsync(x => x.Username == username);
 
             try
             {
@@ -38,13 +38,16 @@ namespace VotingSystem.Persistence.Repositories
                     Id = user.Id,
                     Username = user.Username,
                     PasswordHash = user.PasswordHash,
-                    Role = user.Role,
+                    RoleId = user.RoleId,
                     UserDetails = new UserDetailsDTO
                     {
-
                         FirstName = user.UserDetails?.FirstName ?? "",
                         LastName = user.UserDetails?.LastName ?? "",
                         Email = user.UserDetails?.Email ?? "",
+                    },
+                    Roles = new RolesDTO
+                    {
+                        RoleName = user.Roles?.RoleName ?? ""
                     }
                 };
 
@@ -61,19 +64,19 @@ namespace VotingSystem.Persistence.Repositories
         {
             try
             {
-                var isEmailExist = await context.UserDetails
-                    .AnyAsync(x => x.Email == email);
+                //var isEmailExist = await context.UserDetails
+                //    .AnyAsync(x => x.Email == email);
 
                 var isUsernameExist = await context.Users
                     .AnyAsync(x => x.Username == username);
 
-                if (isEmailExist == true)
-                    return "Email Exist";
+                //if (isEmailExist == true)
+                //    return "Email Exist";
 
                 if (isUsernameExist == true)
                     return "Username Exist";
 
-                return "Both email and username not exist";
+                return "Not exist";
 
             }
             catch
