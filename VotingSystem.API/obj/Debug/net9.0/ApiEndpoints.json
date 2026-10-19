@@ -27,6 +27,58 @@
   },
   {
     "ContainingType": "VotingSystem.API.Controllers.ElectionController",
+    "Method": "DeleteElection",
+    "RelativePath": "api/Election/DeleteElection",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VotingSystem.API.Controllers.ElectionController",
+    "Method": "FilterElectionByName",
+    "RelativePath": "api/Election/FilterElectionByName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "electionName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[VotingSystem.API.DTO.Elections.GetElectionsDTO, VotingSystem.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VotingSystem.API.Controllers.ElectionController",
     "Method": "GetElections",
     "RelativePath": "api/Election/GetElections",
     "HttpMethod": "GET",
@@ -66,6 +118,32 @@
     ]
   },
   {
+    "ContainingType": "VotingSystem.API.Controllers.ElectionController",
+    "Method": "UpdateElection",
+    "RelativePath": "api/Election/UpdateElection",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "VotingSystem.API.DTO.Elections.UpdateElectionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "VotingSystem.API.DTO.Elections.UpdateElectionDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "VotingSystem.API.Controllers.PositionController",
     "Method": "CreatePosition",
     "RelativePath": "api/Position/CreatePosition",
@@ -82,6 +160,37 @@
     "ReturnTypes": [
       {
         "Type": "VotingSystem.API.DTO.Positions.CreatePositionDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VotingSystem.API.Controllers.PositionController",
+    "Method": "RetrievePositions",
+    "RelativePath": "api/Position/RetrievePositions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ElectionName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PositionName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[VotingSystem.API.DTO.Positions.GetPositionResponse, VotingSystem.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

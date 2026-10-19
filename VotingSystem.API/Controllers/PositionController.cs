@@ -2,7 +2,11 @@
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using VotingSystem.API.DTO.Positions;
+using VotingSystem.Application.DTO.Positions;
+using VotingSystem.Application.Features.Elections.Query.GetElections;
 using VotingSystem.Application.Features.Positions.Command;
+using VotingSystem.Application.Features.Positions.Command.CreatePosition;
+using VotingSystem.Application.Features.Positions.Query.GetPositions;
 using VotingSystem.Application.Utilities;
 
 namespace VotingSystem.API.Controllers
@@ -39,6 +43,18 @@ namespace VotingSystem.API.Controllers
                 throw;
             }
            
+        }
+
+        [HttpGet("RetrievePositions")]
+        public async Task<ActionResult<List<GetPositionResponse>>> RetrievePositions(string ? ElectionName, string ? PositionName)
+        {
+            var command = new GetPositionsQuery()
+            {
+                ElectionName = ElectionName, 
+                PositionName = PositionName
+            };
+            var result = await mediator.Send(command);
+            return Ok(result);
         }
     }
 }

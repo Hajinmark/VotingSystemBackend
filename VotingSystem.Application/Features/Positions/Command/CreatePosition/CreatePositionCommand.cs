@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using VotingSystem.Application.DTO.Elections;
 using VotingSystem.Application.Utilities;
 
-namespace VotingSystem.Application.Features.Positions.Command
+namespace VotingSystem.Application.Features.Positions.Command.CreatePosition
 {
     public class CreatePositionCommand : IRequest<CreatePositionRequest>
     {

@@ -13,6 +13,11 @@ namespace VotingSystem.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<Position> builder)
         {
+            builder.HasKey(x => x.Id);
+
+            builder.Property(x => x.Id)
+                .UseIdentityColumn(1, 1);
+
             builder.HasOne(x => x.Election)
               .WithMany(x => x.Positions)
               .HasForeignKey(x => x.ElectionId)

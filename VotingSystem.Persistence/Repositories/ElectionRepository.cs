@@ -39,6 +39,47 @@ namespace VotingSystem.Persistence.Repositories
            }
         }
 
+        public async Task<bool> DeleteElection(int id)
+        {
+            var electionId = await context.Elections.FirstOrDefaultAsync(x => x.Id == id);
+            var userElectionId = await context.UserElections.FirstOrDefaultAsync(x => x.ElectionId == id);
+
+            if(electionId != null && userElectionId != null)
+            {
+                context.Elections.Remove(electionId);
+                context.UserElections.Remove(userElectionId);
+                return true;
+            }
+
+            return false;
+
+        }
+
+        public async Task<List<GetElectionResponse>> FilterElectionByName(string electionName)
+        {
+            var query = from election in this.context.Elections
+                        where election.Title.Contains(electionName) 
+                        join users in this.context.Users
+                        on election.CreatedBy equals users.Id
+                        select new GetElectionResponse
+                        {
+                            ElectionId = election.Id,
+                            ElectionName = election.Title,
+                            ElectionDescription = election.Description,
+                            StartDate = election.StartDate.ToString("MMMM d, yyyy hh:mm tt"),
+                            EndDate = election.EndDate.ToString("MMMM d, yyyy hh:mm tt"),
+                            ElectionStatus = election.Status,
+                            StatusName = ((ElectionStatus)election.Status).ToString(),
+                            CreatedBy = election.CreatedBy,
+                            CreatedByName = users.Username,
+                            CreatedAt = election.CreatedAt.ToString("MMMM d, yyyy hh:mm tt"),
+                            UpdatedAt = election.UpdatedAt.ToString("MMMM d, yyyy hh:mm tt"),
+                            Period = election.StartDate.ToString("MMMM d, yyyy hh:mm tt") + " - " + election.EndDate.ToString("MMMM d, yyyy hh:mm tt")
+                        };
+
+            return await query.ToListAsync();
+        }
+
         public async Task<List<GetElectionResponse>> GetElections()
         {
             try

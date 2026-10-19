@@ -10,6 +10,7 @@ namespace VotingSystem.Domain.Enums
     {
         Valid = 0,
         NameAlreadyExists = 1,
-        DisplayOrderAlreadyExists = 2
+        DisplayOrderAlreadyExists = 2,
+        ElectionDoesNotExist = 3
     }
 }

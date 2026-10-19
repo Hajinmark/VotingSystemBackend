@@ -5,10 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using VotingSystem.Application.DTO.Elections;
+using VotingSystem.Application.DTO.Positions;
 using VotingSystem.Application.Features.Elections.Command.CreateElection;
+using VotingSystem.Application.Features.Elections.Command.DeleteElection;
+using VotingSystem.Application.Features.Elections.Command.UpdateElection;
 using VotingSystem.Application.Features.Elections.Query.ElectionStatus;
+using VotingSystem.Application.Features.Elections.Query.FilterElection;
 using VotingSystem.Application.Features.Elections.Query.GetElections;
-using VotingSystem.Application.Features.Positions.Command;
+using VotingSystem.Application.Features.Positions.Command.CreatePosition;
+using VotingSystem.Application.Features.Positions.Query.GetPositions;
 using VotingSystem.Application.Features.Roles.Command.CreateRoles;
 using VotingSystem.Application.Features.Users.Command.CreateUser;
 using VotingSystem.Application.Features.Users.Command.LoginUser;
@@ -28,6 +33,11 @@ namespace VotingSystem.Application
             services.AddScoped<IRequestHandler<CreatePositionCommand, CreatePositionRequest>, CreatePositionCommandHandler>();
             services.AddScoped<IRequestHandler<GetElectionStatusQuery, GetElectionStatusResponse[]>, GetElectionStatusQueryHandler>();
             services.AddScoped<IRequestHandler<GetElectionsQuery, List<GetElectionResponse>>, GetElectionQueryHandler>();
+            services.AddScoped<IRequestHandler<UpdateElectionCommand, UpdateElectionRequest>, UpdateElectionCommandHandler>();
+            services.AddScoped<IRequestHandler<FilterElectionQuery, List<GetElectionResponse>>, FilterElectionQueryHandler>();
+            services.AddScoped<IRequestHandler<DeleteElectionCommand, string>, DeleteElectionCommandHandler>();
+            services.AddScoped<IRequestHandler<GetPositionsQuery, List<GetPositionsDTO>>,GetPositionsQueryHandler>();
+
             return services;   
         }
     }

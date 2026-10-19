@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using VotingSystem.Application.Contracts.Persistence;
 using VotingSystem.Application.Contracts.Repositories;
+using VotingSystem.Domain.Entities;
 using VotingSystem.Persistence.Repositories;
 using VotingSystem.Persistence.UnitOfWork;
 
@@ -26,6 +27,7 @@ namespace VotingSystem.Persistence
             services.AddScoped<IRoleRepository, RoleRepository>();
             services.AddScoped<IElectionRepository, ElectionRepository>();
             services.AddScoped<IPositionRepository, PositionRepository>();
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
             return services;
         }

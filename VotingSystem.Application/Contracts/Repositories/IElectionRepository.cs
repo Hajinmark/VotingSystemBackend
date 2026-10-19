@@ -13,5 +13,7 @@ namespace VotingSystem.Application.Contracts.Repositories
         Task<int> IsElectionTitleExist(string title);
         Task<string> AddUserElection(UserElection request);
         Task<List<GetElectionResponse>> GetElections();
+        Task<List<GetElectionResponse>> FilterElectionByName(string electionName);
+        Task<bool> DeleteElection(int id);
     }
 }

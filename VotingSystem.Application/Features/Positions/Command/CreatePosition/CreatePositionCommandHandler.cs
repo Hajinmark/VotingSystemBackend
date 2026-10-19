@@ -12,7 +12,7 @@ using VotingSystem.Application.Features.Roles.Command.CreateRoles;
 using VotingSystem.Application.Utilities;
 using VotingSystem.Domain.Entities;
 
-namespace VotingSystem.Application.Features.Positions.Command
+namespace VotingSystem.Application.Features.Positions.Command.CreatePosition
 {
     public class CreatePositionCommandHandler : IRequestHandler<CreatePositionCommand, CreatePositionRequest>
     {
@@ -38,6 +38,9 @@ namespace VotingSystem.Application.Features.Positions.Command
                 if (position == Domain.Enums.PositionValidationResult.DisplayOrderAlreadyExists)
                     throw new AlreadyExistsException("Display Order already exist");
 
+                if (position == Domain.Enums.PositionValidationResult.ElectionDoesNotExist)
+                    throw new AlreadyExistsException("Election does not exist");
+
                 var data = new Position()
                 {
                     ElectionId = request.ElectionId,
@@ -48,8 +51,10 @@ namespace VotingSystem.Application.Features.Positions.Command
                     UpdatedAt = DateTime.UtcNow
                 };
 
-                await this.repository.Add(data);
-                await this.unitOfWork.Commit();
+                await repository.Add(data);
+                await unitOfWork.Commit();
+
+
 
                 return new CreatePositionRequest()
                 { 
@@ -61,10 +66,10 @@ namespace VotingSystem.Application.Features.Positions.Command
 
 
             }
-            catch
+            catch(Exception ex)
             {
-                await this.unitOfWork.Rollback();
-                throw;
+                await unitOfWork.Rollback();
+                throw new Exception(ex.Message);
             }
            
         }
